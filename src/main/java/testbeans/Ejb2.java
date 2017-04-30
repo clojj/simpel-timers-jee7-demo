@@ -1,14 +1,19 @@
 package testbeans;
 
+import cdiextension.SimpleTimer;
+
 import javax.ejb.Stateless;
-import javax.ejb.TransactionAttribute;
-import javax.ejb.TransactionAttributeType;
 
 @Stateless
 public class Ejb2 {
 
-    @TransactionAttribute(TransactionAttributeType.NEVER)
-    public void ejb2() {
-        System.out.println("ejb2");
+    public Ejb2() {
     }
+
+    @SimpleTimer(value = "ejb2")
+    public void ejb2Method() {
+        System.out.println("ejb2Method in thread " + Thread.currentThread().getName());
+        Utils.sleep(2000);
+    }
+
 }
