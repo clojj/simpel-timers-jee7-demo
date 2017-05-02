@@ -15,7 +15,7 @@
 
         <dependency>
             <groupId>com.github.clojj.simple-timers</groupId>
-            <artifactId>jee</artifactId>
+            <artifactId>simple-timers-jee</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
