@@ -1,8 +1,8 @@
 package testbeans;
 
-public class Utils {
+class Utils {
 
-    public static void sleep(int millis) {
+    static void sleep(int millis) {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {

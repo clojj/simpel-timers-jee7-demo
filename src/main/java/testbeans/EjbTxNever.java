@@ -8,7 +8,7 @@ import javax.ejb.TransactionAttributeType;
 public class EjbTxNever {
 
     @TransactionAttribute(TransactionAttributeType.NEVER)
-    public void ejb2() {
-        System.out.println("ejb2");
+    public void ejbTxNever() {
+        System.out.println("IN ejbTxNever");
     }
 }
